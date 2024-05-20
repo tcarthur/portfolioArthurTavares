@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/index.min.css">
+    <title>PORTFÓLIO PESSOAL</title>
+   
+</head>
+<body>
+    <div class="tabs">
+        <div class="tab" onclick="openTab(event, 'sobre-mim')">Sobre Mim</div>
+        <div class="tab" onclick="openTab(event, 'formacao')">Formação</div>
+        <div class="tab" onclick="openTab(event, 'portfolio')">Portfólio</div>
+        <div class="tab" onclick="openTab(event, 'contato')">Contato</div>
+    </div>
+
+   
+    
+    <div id="sobre-mim" class="tab-content">
+        <img src="/img/logo.png" alt="Logo" id="Logo">
+        <h2>Sobre Mim</h2>
+        <p>Meu nome é Arthur Tavares, nasci em 11 de fevereiro de 1996 e sou de Belo Horizonte. Desde jovem, sempre fui apaixonado por tecnologia, o que me levou a explorar diversas áreas dentro desse universo. Nos meus momentos de lazer, gosto de jogar video game, andar de skate, caminhar e assistir futebol.</p>
+        <p>Após concluir o ensino médio, ingressei na área de Design Gráfico, onde atuei por 6 anos. Com o início da pandemia no final de 2019 para o início de 2020, decidi expandir meus conhecimentos e comecei a estudar desenvolvimento, focando em Python. Esse período de estudo autodidata me proporcionou uma sólida base de conhecimento e me preparou para os desafios do mercado de trabalho.</p>
+        <p>Profissionalmente, atuo como desenvolvedor na OKTZ, onde trabalho com PHP e JavaScript. Além disso, tenho experiência com bancos de dados como SQL Server e MySQL, e também possuo conhecimentos em Python. Minha trajetória tem sido marcada por um constante desejo de aprender e me aperfeiçoar, sempre buscando novas habilidades e soluções inovadoras para os projetos em que estou envolvido.</p>
+    </div>
+    
+    <div id="formacao" class="tab-content">
+        <h2>Formação</h2>
+        <p>Possuo o segundo grau completo e diversas certificações que destacam minhas habilidades em diferentes áreas. Na área de design, sou certificado pela Adobe em softwares de edição como Photoshop, Illustrator, After Effects e Premiere. Além disso, na área de programação, estou cursando Análise e Desenvolvimento de Sistemas (ADS)  e possuo certificações em linguagens como JavaScript e Python.</p>
+    </div>
+    
+    
+    <div id="portfolio" class="tab-content">
+        <h2>Portfólio</h2>
+        <p>Você pode conferir alguns dos meus projetos no meu <a href="https://github.com/tcarthur" target="_blank">GitHub</a>.</p>
+        <p>Um dos meus projetos notáveis é uma aplicação de raspagem de dados desenvolvida com Node.js usando a biblioteca Puppeteer. Esta aplicação coleta preços de outras empresas para realizar comparações de preços, proporcionando uma ferramenta eficiente para análise competitiva.</p>
+    </div>
+    
+    <div id="contato" class="tab-content contato">
+        <h2>Contato</h2>
+        <p><strong>Meu contato:</strong></p>
+        <p>Email: <a href="mailto:tavares.arthur@ymail.com">tavares.arthur@ymail.com</a></p>
+        <p>Linkedin: <a href="https://www.linkedin.com/in/tcarthur/">Ir para o Linkedin</a></p>
+        <p>Telefone: <a href="tel:+5531973110678">31 97311-0678</a></p>
+        <p>Ou envie sua mensagem abaixo:</p>
+        <form id="meuFormulario">
+            <input type="text" id="nome" name="nome" placeholder="Nome Completo">
+    
+            <input type="tel" id="telefone" name="telefone"placeholder="DDD + Telefone" required>
+    
+            <textarea id="mensagem" name="mensagem" rows="4"placeholder="Escreva aqui a sua mensagem!" required></textarea>
+    
+            <button type="submit" id="enviar">Enviar</button>
+        </form>
+    </div>
+    <script src ='js/botão.min.js'></script>
+</body>
+</html>
